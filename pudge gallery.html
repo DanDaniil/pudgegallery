@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<center><h1>PUDGE</h1>
+    <img id="1" src="pudge1.jpg"></br>
+<button onclick="left()"><img src="left.png"</button>
+<button onclick="right()"><img src="right.png"</button>
+</center>
+</body>
+<script>
+    i=1
+    function left(){
+        i=i-1
+        if(i===0){
+            i=3
+        }
+        if(i===1){
+            document.getElementById('1').src='pudge1.jpg'
+        }
+        if(i===2){
+            document.getElementById('1').src='pudge2.jpg'
+        }
+        if(i===3){
+            document.getElementById('1').src='pudge3.jpg'
+        }
+    }
+    function right(){
+        i=i+1
+        if(i===4){
+            i=1
+        }
+        if(i===1){
+            document.getElementById('1').src='pudge1.jpg'
+        }
+         if(i===2){
+            document.getElementById('1').src='pudge2.jpg'
+        }
+        if(i===3){
+        document.getElementById('1').src='pudge3.jpg'
+        }
+    }
+</script>
+</html>
